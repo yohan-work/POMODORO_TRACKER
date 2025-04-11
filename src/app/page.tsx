@@ -34,7 +34,7 @@ export default function Home() {
     return (
       <main className="min-h-screen bg-gray-100 py-12 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold text-center mb-8">
+          <h1 className="text-gray-600 text-3xl text-gray-600 font-bold text-center mb-8">
             포모도로 팀 집중 트래커
           </h1>
           <UserProfile onSubmit={handleProfileSubmit} />
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 py-8 px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-2">
+        <h1 className="text-gray-600 text-3xl font-bold text-center mb-2">
           포모도로 팀 집중 트래커
         </h1>
         <p className="text-center text-gray-600 mb-8">

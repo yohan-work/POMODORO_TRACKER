@@ -21,7 +21,7 @@ const PomodoroStatus = {
 const initialTeamState = {
   status: PomodoroStatus.IDLE,
   timeRemaining: 0,
-  focusDuration: 25 * 60, // 25분
+  focusDuration: 1 * 60, // 1분
   breakDuration: 5 * 60, // 5분
   users: [],
 };

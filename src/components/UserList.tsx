@@ -26,16 +26,18 @@ const UserList: React.FC<UserListProps> = ({
 
   return (
     <div className="rounded-lg shadow-lg bg-white p-4">
-      <h2 className="text-xl font-bold mb-4">팀원 현황</h2>
+      <h2 className="text-xl font-bold mb-4 text-gray-600">팀원 현황</h2>
 
       <div className="space-y-3">
         {users.length === 0 ? (
-          <p className="text-gray-500 text-center">참가한 팀원이 없습니다.</p>
+          <p className="text-gray-500 text-center text-gray-600">
+            참가한 팀원이 없습니다.
+          </p>
         ) : (
           users.map((user) => (
             <div
               key={user.id}
-              className={`flex items-center justify-between p-3 rounded-lg ${getUserStatusStyle(
+              className={`text-gray-600 flex items-center justify-between p-3 rounded-lg ${getUserStatusStyle(
                 user
               )}`}
             >

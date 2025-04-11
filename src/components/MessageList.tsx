@@ -24,18 +24,20 @@ const MessageList: React.FC<MessageListProps> = ({ messages }) => {
 
   return (
     <div className="rounded-lg shadow-lg bg-white p-4 h-[300px] flex flex-col">
-      <h2 className="text-xl font-bold mb-4">메시지</h2>
+      <h2 className="text-xl font-bold mb-4 text-gray-600">메시지</h2>
 
       <div className="flex-1 overflow-auto mb-2">
         {messages.length === 0 ? (
-          <p className="text-gray-500 text-center">아직 메시지가 없습니다.</p>
+          <p className="text-gray-500 text-center text-gray-600">
+            아직 메시지가 없습니다.
+          </p>
         ) : (
           <div className="space-y-2">
             {messages.map((message) => (
               <div key={message.id} className="p-2 rounded bg-gray-100">
                 <div className="flex justify-between items-start">
-                  <p className="text-sm">{message.text}</p>
-                  <span className="text-xs text-gray-500 ml-2">
+                  <p className="text-sm text-gray-600">{message.text}</p>
+                  <span className="text-xs text-gray-600 text-gray-500 ml-2">
                     {formatTime(message.timestamp)}
                   </span>
                 </div>
